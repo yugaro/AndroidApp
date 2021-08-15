@@ -49,7 +49,6 @@ class RoundTower(residents: Int, radius: Double, val floors: Int = 2) : RoundHut
     }
 }
 
-
 fun main() {
     val squareCabin = SquareCabin(6, 50.0)
     val roundHunt = RoundHut(4, 10.0)
@@ -62,6 +61,7 @@ fun main() {
         println("Has room? ${hasRoom()}")
         println("Floor area: ${floorArea()}")
     }
+
     with(roundHunt) {
         println("\nRound Hunt\n============")
         println("Capacity: ${capacity}")
@@ -73,6 +73,7 @@ fun main() {
         println("Floor area: ${floorArea()}")
         println("Carpet size: ${calculateMaxCarpetSize()}")
     }
+
     with(roundTower) {
         println("\nRound Tower\n============")
         println("Capacity: ${capacity}")
@@ -80,5 +81,4 @@ fun main() {
         println("Has room? ${hasRoom()}")
         println("Floor area: ${floorArea()}")
     }
-
 }
